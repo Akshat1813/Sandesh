@@ -2,6 +2,7 @@ import bcrypt from "bcryptjs";
 import User from "../Models/user.model.js";
 import generateTokenAndSetCookie from "../Utils/GenerateToken.js";
 
+
 export const singup = async (req, res) => {
   try {
     console.log("Request Body:", req.body);
@@ -14,6 +15,7 @@ export const singup = async (req, res) => {
     const user = await User.findOne({ username });
 
     if (user) {
+      
       return res.status(400).json({ error: "Username already exists !!" });
     }
 

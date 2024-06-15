@@ -22,3 +22,10 @@ body{
 ::-webkit-scrollbar-thumb:hover {
   background: #242424 ;
 } 
+@font-face {
+  font-family: 'MyCustomFont'; /* Font family name */
+  src: url('SamarkanNormal-Gg5D.ttf') /* Source file path */
+}
+.app-name{
+  font-family:'MyCustomFont' ,sans-serif !important;
+}

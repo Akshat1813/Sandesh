@@ -37,7 +37,7 @@ const Login = () => {
               <span className="text-base label-text">Password</span>
             </label>
             <input
-              type="text"
+              type="password"
               placeholder="Enter Password"
               className="input input-bordered input-primary w-full max-w-xs"
               value={password}
